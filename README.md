@@ -86,7 +86,7 @@ The results are reasonable providing the training data used. Network learned how
 Interestingly, some of the predicted drug candidates (e.g. anticancer bleomycin and mithramycin) were not present in the training dataset and are still not present in the PubChem bioassay dataset. I could only find in-silico results suggesting that they could be active against Covid-19.
 
 
-Research on Covid-19:
+Research on Covid-19 drug candidates:
 - anticancer drugs (in-silico):
 1) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7505060/
 2) https://www.sciencedirect.com/science/article/pii/S1674862X21000227
