@@ -71,18 +71,25 @@ The Drug Screening was performed with Virtual_Screening.ipynb. Below are drug ca
 Fig 3. Drug screening results. Molecules are labeled with a probability (P) which can be interpreted as Covid-19 drug-likeliness predicted by the network and name if exact same SMILES could be found on PubChem. Results are shown for P > 0.6.   
 
 
-Among medications which are not meant for oral administration (topical antiseptics) three classes of molecular compounds were found to be potentially active against Covid-19: glicosides, antypsychotic drugs and cyclosporin.
+Among medications which are not meant for oral administration (topical antiseptics) four classes of molecular compounds were found to be potentially active against Covid-19: glicosides, antypsychotic drugs, cyclosporin and anticancer drugs.
 
-Three heart-protecting glicosides were scored with high probability (P=0.99): digoxin, digitoxin and deslanozid. Antipsychotics: chlorpromazine, clomipramine and similar were scored in the range from 0.65 to 0.8. Cyclosporin (the large cyclic molecule) was scored 0.94.
+Three heart-protecting glicosides were scored with high probability (P=0.99): digoxin, digitoxin and deslanozid. Antipsychotics: chlorpromazine, clomipramine and similar were scored in the range from 0.65 to 0.8. 
+
+Cyclosporin (the large cyclic molecule) was scored 0.94.
+
+Anticancer drugs: Bleomycin and Mithramicin scored high: 0.96 and 0.82 respectively.
 
 ## 7. Analysis and discussion
 
-The results are reasonable providing the training data used. Network learned how to recognize molecules or classes of molecules which were similar to those labeled as active in the training dataset. The high P value corresponded to classes of molecules in which the ratio of molecules labeled as active was high. 
+The results are reasonable providing the training data used. Network learned how to recognize molecules or classes of molecules which were similar to those labeled as active in the training dataset. In general, the high P value corresponded to classes of molecules in which the ratio of molecules labeled as active was high. 
 
-Some of the predicted drug candidates were not present in the training dataset or even in the whole original PubChem dataset from Jan 2022.
+Interestingly, some of the predicted drug candidates (e.g. anticancer bleomycin and mithramycin) were not present in the training dataset and are still not present in the PubChem bioassay dataset. I could only find in-silico results suggesting that they could be active against Covid-19.
 
 
-Recent research on Covid-19:
+Research on Covid-19:
+- anticancer drugs (in-silico):
+1) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7505060/
+2) https://www.sciencedirect.com/science/article/pii/S1674862X21000227
 - glicosides 
 1) https://www.frontiersin.org/articles/10.3389/fphar.2021.624704/full
 2) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8469069/
