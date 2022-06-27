@@ -65,19 +65,18 @@ Fig 2. Plot with auc_ROC scores for the test dataset. (left) Comparison of perfo
 ## 6. Virtual Screening with Attentive FP
 The Drug Screening was performed with Virtual_Screening.ipynb. Below are drug candidates obtained by screening of the FDA-approved molecules from ClinTox dataset. 
 
-![](drug_candidates.png)
+Among medications which are not meant for oral administration (topical antiseptics) four classes of drugs were found to be potentially active against Covid-19: glicosides, antypsychotic drugs, cyclosporin and anticancer drugs.
 
+Three heart-protecting glicosides were scored with high probability (P=0.99): digoxin, digitoxin and deslanozid.
 
-Fig 3. Drug screening results. Molecules are labeled with a probability (P) which can be interpreted as Covid-19 drug-likeliness predicted by the network and name if exact same SMILES could be found on PubChem. Results are shown for P > 0.6.   
+Antipsychotics: chlorpromazine, clomipramine and similar scored in the range from 0.65 to 0.8. 
 
-
-Among medications which are not meant for oral administration (topical antiseptics) four classes of molecular compounds were found to be potentially active against Covid-19: glicosides, antypsychotic drugs, cyclosporin and anticancer drugs.
-
-Three heart-protecting glicosides were scored with high probability (P=0.99): digoxin, digitoxin and deslanozid. Antipsychotics: chlorpromazine, clomipramine and similar were scored in the range from 0.65 to 0.8. 
-
-Cyclosporin (the large cyclic molecule) was scored 0.94.
+Cyclosporin (the large cyclic molecule) scored 0.94.
 
 Anti-cancer/antineoplastic drugs: Bleomycin and Mithramicin scored high: 0.96 and 0.82 respectively.
+
+![](drug_candidates.png)
+Fig 3. Drug screening results. Molecules are labeled with a probability (P) which can be interpreted as Covid-19 drug-likeliness predicted by the network and name if exact same SMILES could be found on PubChem. Results are shown for P > 0.6.   
 
 ## 7. Analysis and discussion
 
