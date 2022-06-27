@@ -77,19 +77,20 @@ Three heart-protecting glicosides were scored with high probability (P=0.99): di
 
 Cyclosporin (the large cyclic molecule) was scored 0.94.
 
-Anticancer drugs: Bleomycin and Mithramicin scored high: 0.96 and 0.82 respectively.
+Anti-cancer/antineoplastic drugs: Bleomycin and Mithramicin scored high: 0.96 and 0.82 respectively.
 
 ## 7. Analysis and discussion
 
 The results are reasonable providing the training data used. Network learned how to recognize molecules or classes of molecules which were similar to those labeled as active in the training dataset. In general, the high P value corresponded to classes of molecules in which the ratio of molecules labeled as active was high. 
 
-Interestingly, some of the predicted drug candidates (e.g. anticancer bleomycin and mithramycin) were not present in the training dataset and are still not present in the PubChem bioassay dataset. I could only find in-silico results suggesting that they could be active against Covid-19.
+Some of the predicted drug candidates (e.g. anticancer bleomycin and mithramycin) were not present in the training dataset or current PubChem bioassay dataset. I could only find in-silico results suggesting that they could be active against Covid-19.
 
 
 Research on Covid-19 drug candidates:
-- anticancer drugs (in-silico):
+- anticancer drugs:
 1) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7505060/
 2) https://www.sciencedirect.com/science/article/pii/S1674862X21000227
+3) https://pubmed.ncbi.nlm.nih.gov/32544802/
 - glicosides 
 1) https://www.frontiersin.org/articles/10.3389/fphar.2021.624704/full
 2) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8469069/
