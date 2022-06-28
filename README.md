@@ -35,7 +35,7 @@ I tested few architectures for comparison:
 - Graph Sage model was used with 200 channels and 4 layers
 - Graph Conv model was used with 200 channels and 3 layers
 - "Conv-GRU" is my own design based on Attentive FP. It had 3 Graph Convolution layers and 3 GRU layers stacked in between Convolutions and 200 channels
-- Attentive FP was used with 64 or 250 channels  
+- Attentive FP was used with 64 or 250 channels.
 
 ## 3. The Attentive FP architecture
 The PyTorch Geometric`s implementation of AttentiveFP and atomic (node) and bond (edge) encoding was used. It is consistent with original publication:
