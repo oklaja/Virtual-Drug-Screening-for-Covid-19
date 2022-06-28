@@ -78,7 +78,7 @@ Anti-cancer/antineoplastic drugs: Bleomycin and Mithramicin scored high: 0.96 an
 ![](drug_candidates.png)
 Fig 3. Drug screening results. Molecules are labeled with a probability (P) which can be interpreted as Covid-19 drug-likeliness predicted by the network and name if exact same SMILES could be found on PubChem. Results are shown for P > 0.6.   
 
-## 7. Analysis and discussion
+## 7. Discussion
 
 The results are reasonable providing the training data used. Network learned how to recognize molecules or classes of molecules which were similar to those labeled as active in the training dataset. In general, the high P value corresponded to classes of molecules in which the ratio of molecules labeled as active was high. 
 
