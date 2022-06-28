@@ -65,7 +65,7 @@ Fig 2. Plot with auc_ROC scores for the test dataset. (left) Comparison of perfo
 ## 6. Virtual Screening with Attentive FP
 The Drug Screening was performed with Virtual_Screening.ipynb. Below are drug candidates obtained by screening of the FDA-approved molecules from ClinTox dataset. 
 
-Among medications which are not meant for oral administration (topical antiseptics) four classes of drugs were found to be potentially active against Covid-19: glicosides, antypsychotic drugs, cyclosporin and anticancer drugs.
+Among medications which are not meant for oral administration (topical antiseptics) four classes of drugs were found to be potentially active against Covid-19: glicosides, antypsychotic drugs, cyclosporin and anticancer drugs. Results are presented for probability (P) larger than 0.6. 
 
 Three heart-protecting glicosides were scored with high probability (P=0.99): digoxin, digitoxin and deslanozid.
 
