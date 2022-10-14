@@ -34,7 +34,7 @@ The rest of processing is in the train notebook and includes transformation of S
 I tested few architectures for comparison:
 - Graph Sage model was used with 200 channels and 4 layers
 - Graph Conv model was used with 200 channels and 3 layers
-- "Conv-GRU" is my own design based on Attentive FP. It had 3 Graph Convolution layers and 3 GRU layers stacked in between Convolutions and 200 channels
+- "Conv-GRU" is a simplified Attentive FP. It had 3 Graph Convolution layers and 3 GRU layers stacked in between Convolutions and 200 channels
 - Attentive FP was used with 64 or 250 channels.
 
 ## 3. The Attentive FP architecture
@@ -55,7 +55,7 @@ Variants of AttentiveFP with 64 (small) and 250 (large) hidden_channels (fingerp
 ![s](AttFP-250.png)
 
 ### 5.2 Baseline and "Conv-GRU" architecture:
-I used Graph Sage (4 layers) and Graph Conv (3 layers) architectures as a baseline which had moderate performance, below 0.8. Interestingly, GraphConv with 3 layers and 3 GRU layers stacked in between second and third Conv layer (Conv-GRU) achieved only slightly worse result (auc_ROC 0.82) than Attentive FP even though it had less layers, less hidden channels, did not use edge (bond) features nor computationally expensive Attention mechanism. It should be noted, however, that transformation of Graph to the Fourier space and GRU layers are still quite expensive in a Conv-GRU architecture.
+I used Graph Sage (4 layers) and Graph Conv (3 layers) architectures as a baseline which had moderate performance, below 0.8. Interestingly, GraphConv with 3 layers and 3 GRU layers stacked in between second and third Conv layer (Conv-GRU) achieved only slightly worse result (auc_ROC 0.82) than Attentive FP even though it had less layers, less hidden channels, did not use edge (bond) features nor computationally expensive Attention mechanism.
 
 
 ![](Test.png)
